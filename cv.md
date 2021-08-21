@@ -19,3 +19,31 @@ There is no turning back, only forward
   - Quickly looking around and easily find contact with the person
   - Honesty, sociability, responsibility, punctuality
   - Team playing
+
+### Skills
+
+- HTML
+- CSS (SCSS, BEM)
+- JavaScript (Fundamentals, ES6+, DOM)
+- Git/GitHub
+- Figma
+- Autocad
+- SolidWorks
+
+### Code Examples
+
+```javascript
+// Find the stray number
+
+function stray(numbers) {
+  let sorted = numbers.sort((a, b) => a - b);
+  if (sorted[0] === sorted[1]) return sorted.pop();
+  else return sorted.shift();
+}
+
+console.log(stray([0, 17, 17, 17, 17]));
+```
+
+### Some of my works
+
+- [Portfolio](https://dmytrozozuliak.github.io/Personal-Portfolio-Webpage/#welcome-section)
