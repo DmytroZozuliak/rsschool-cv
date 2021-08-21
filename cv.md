@@ -47,3 +47,19 @@ console.log(stray([0, 17, 17, 17, 17]));
 ### Some of my works
 
 - [Portfolio](https://dmytrozozuliak.github.io/Personal-Portfolio-Webpage/#welcome-section)
+
+### Education
+
+- **National Technical University of Ukraine "Kyiv Polytechnic Institute"**
+  - chemical engineering
+- **https://www.freecodecamp.org/**
+  - HTML/CSS
+  - JavaScript
+- **[Alexander Lushenko courses](https://itgid.info/course/javascript-2)**
+  - JavaScrtipt
+
+### Languages
+
+- **English** - B1-B2
+- **Ukrainian** - native speaker.
+- **Russian** - native speaker.
