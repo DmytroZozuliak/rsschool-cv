@@ -52,14 +52,14 @@ console.log(stray([0, 17, 17, 17, 17]));
 
 - **National Technical University of Ukraine "Kyiv Polytechnic Institute"**
   - chemical engineering
-- **https://www.freecodecamp.org/**
+- **[freecodecamp courses](https://www.freecodecamp.org/)**
   - HTML/CSS
   - JavaScript
 - **[Alexander Lushenko courses](https://itgid.info/course/javascript-2)**
-  - JavaScrtipt
+  - JavaScrtipt v2.0
 
 ### Languages
 
 - **English** - B1-B2
-- **Ukrainian** - native speaker.
-- **Russian** - native speaker.
+- **Ukrainian** - native speaker
+- **Russian** - native speaker
