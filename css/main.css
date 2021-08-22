@@ -200,12 +200,25 @@ section article ul li h4 {
 /* footer */
 
 .footer {
-  padding: 20px;
-  /* margin: 0px 0px 0px 180px; */
   border-top: 2px solid white;
   background: rgb(75, 75, 77);
   font-size: 20px;
   color: white;
+}
+
+.footer__list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer__list a {
+  color: white;
+  text-decoration: none;
+}
+.footer__list a:hover {
+  color: black;
 }
 
 /* media */
