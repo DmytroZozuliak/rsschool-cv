@@ -106,6 +106,18 @@ section article ul li h4 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.code {
+  display: block;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #ccc7c7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  color: black;
+}
 
 /* CV-left side */
 .cv-left a {
