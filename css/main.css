@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box;
+}
+
+.body-bg {
+  background: url(https://i.pinimg.com/564x/62/52/f9/6252f9612f0c6665b7c2d8f2adf7119e.jpg);
+}
+.container {
+  padding: 5px;
+  margin: 0px auto;
+}
+.row {
+  margin: 0px;
+}
+
+/* CV-right side */
+
+.cv-right {
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.cv-header {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+.mark-liner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 0px auto;
+}
+
+.job-title {
+  text-align: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: rgb(75, 75, 77);
+
+  padding: 0px 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: inline-block;
+  background: rgb(248, 249, 250);
+  z-index: 1;
+}
+
+.liner {
+  height: 1px;
+  width: 90%;
+  background: black;
+  margin: 0 5%;
+}
+.position-liner {
+  position: absolute;
+
+  bottom: 50%;
+  z-index: 0;
+}
+
+.section-data {
+  color: rgb(75, 75, 77);
+  margin: 20px 6%;
+}
+
+.experience,
+.profile {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.experience-list {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.experience-list img {
+  padding: 20px 0px 0px 0px;
+  width: 70%;
+  margin: 0px auto;
+  display: block;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+section article ul li h4 {
+  margin: 1px 0;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.year {
+  font-style: italic;
+  font-size: 0.8rem;
+}
+.experience-ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.experience-list__position-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.code {
+  display: block;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #ccc7c7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  color: black;
+}
+
+/* CV-left side */
+.cv-left a {
+  color: white;
+  text-decoration: none;
+}
+.cv-left a:hover {
+  color: black;
+}
+
+.cv-left {
+  background: rgb(75, 75, 77);
+  color: rgb(248, 249, 250);
+}
+
+.cv-left__photoblock {
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+.cv-left__photo {
+  width: 90%;
+}
+.cv-left__contacts {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+.cv-left__contacts {
+  list-style: none;
+  padding-left: 0;
+}
+.cv-left__contacts li {
+  margin: 5px auto;
+}
+
+.cv-left__contacts li span {
+  padding: 0px 0px 0px 5px;
+}
+
+.cv-left__adress {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  font-style: italic;
+  margin-right: auto;
+  margin-left: auto;
+}
+.left-line1,
+.left-line2 {
+  height: 1px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  background: rgb(248, 249, 250);
+}
+.left-line2 {
+  display: none;
+}
+.cv-left__title {
+  padding-left: 0;
+  margin: 4px 0 4px 0;
+  font-size: 1.4rem;
+}
+.left-cv-list {
+  font-size: 1rem;
+  padding-left: 20px;
+}
+
+/* footer */
+
+.footer {
+  border-top: 2px solid white;
+  background: rgb(75, 75, 77);
+  font-size: 20px;
+  color: white;
+}
+
+.footer__list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer__list a {
+  color: white;
+  text-decoration: none;
+}
+.footer__list a:hover {
+  color: black;
+}
+
+/* media */
+@media (max-width: 991.88px) {
+  .cv-left__photoblock {
+    width: 80%;
+  }
+  .left-line1 {
+    display: none;
+  }
+  .left-line2 {
+    display: block;
+  }
+  .left-cv-list {
+    font-size: 1.2rem;
+    padding-left: 30px;
+  }
+  .cv-left__title {
+    font-size: 1.4rem;
+  }
+  .cv-left__skills {
+    margin-top: 10px;
+  }
+  .cv-left__achievments {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767.88px) {
+  .cv-left__photoblock {
+    width: 70%;
+  }
+  .left-line2 {
+    display: block;
+  }
+  .cv-left__contacts {
+    font-size: 1.3rem;
+  }
+  .left-cv-list {
+    font-size: 1.1rem;
+    padding-left: 30px;
+  }
+  .cv-left__title {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 575.88px) {
+  .cv-left__photoblock {
+    width: 70%;
+  }
+  .left-line2 {
+    display: block;
+  }
+  .cv-left__contacts {
+    font-size: 1.3rem;
+  }
+  .left-cv-list {
+    font-size: 1.1rem;
+    padding-left: 30px;
+  }
+  .cv-left__title {
+    font-size: 1.4rem;
+  }
+}
