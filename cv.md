@@ -11,7 +11,7 @@
 ### About Me
 
 After ending my studying at university, I worked as a designer for 6 years. After that for 2 years as a sales manager.
-But my dream was to become an IT developer. That's why I decided totally to change my life. and began to study, study, study...
+But I only dreamed about programming, not only as a hobby, but also as a job. That's why I decided totally to change my life. and began to study, study, study...
 There is no turning back, only forward
 
 - My strengths:
