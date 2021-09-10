@@ -14,6 +14,9 @@
 	<!-- * Подключаем поддержку иконок -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
 		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+	<link rel="stylesheet" href="./styles/obsidian.min.css">
+	<script src="./highlight.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body class="body-bg">
@@ -218,17 +221,20 @@
 								</h4>
 							</li>
 							<li>
-								<p>
-									<code class="code">// Find the stray number <br>
-										<br>
-										function stray(numbers) {<br>
-										 	 let sorted = numbers.sort((a, b) => a - b);<br>
-										 	 if (sorted[0] === sorted[1]) return sorted.pop();<br>
-										 	 else return sorted.shift();<br>
-										}<br>
-										<br>
-										console.log(stray([0, 17, 17, 17, 17]));</code>
-								</p>
+
+								<pre>
+<code>// Find the stray number 
+
+	function stray(numbers) {
+	 let sorted = numbers.sort((a, b) => a - b);
+	 if (sorted[0] === sorted[1]) return sorted.pop();
+	 else return sorted.shift();
+	}
+	
+console.log(stray([0, 17, 17, 17, 17]));
+</code>
+									</pre>
+
 							</li>
 						</ul>
 					</article>
