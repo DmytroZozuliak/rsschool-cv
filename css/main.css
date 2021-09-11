@@ -114,6 +114,17 @@ section article ul li h4 {
   padding-left: 0;
   list-style-type: none;
 }
+
+.experience-ul .experience__img {
+  width: 90%;
+  padding: 0px 0px 30% 0px;
+  margin: 20px auto;
+  background: url(../images/ScreenshotMyWorks.jpg) center/cover no-repeat;
+}
+.experience-ul code {
+  margin: 20px auto;
+}
+
 .experience-list__position-title {
   margin-top: 10px;
   margin-bottom: 10px;
