@@ -258,6 +258,9 @@ section article ul li h4 {
 .cv-left__contacts li span {
   padding: 0px 0px 0px 5px;
 }
+.cv-left__contacts li .email-span {
+  padding: 0;
+}
 
 .cv-left__adress {
   font-size: 0.95rem;
