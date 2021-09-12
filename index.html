@@ -14,33 +14,49 @@
 	<!-- * Подключаем поддержку иконок -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
 		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
-	<link rel="stylesheet" href="./styles/obsidian.min.css">
-	<script src="./highlight.js"></script>
+	<link rel="stylesheet" href="./styles/a11y-dark.min.css">
+	<script src="./highlight.min.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body class="body-bg">
-
 	<div class="container my-4">
+
+		<header class="header" id="header">
+			<nav>
+				<ul class="header__list list">
+					<li class="list__item"><a href="#about">about me</a></li>
+					<li class="list__item"><a href="#skills">skills</a></li>
+					<li class="list__item"><a href="#works">my works</a></li>
+					<li class="list__item"><a href="#education">education</a></li>
+				</ul>
+			</nav>
+		</header>
+
 		<main class="row">
 
 			<aside class="cv-left col-lg-3 col-md-12 row">
 				<div class="col-lg-12 col-md-6">
 
 					<div class="cv-left__photoblock">
-						<img src="./images/pexels-govinda-valbuena-1054048.jpg" width="240" height="240" alt="CV"
+						<img src="./images/pexels-govinda-valbuena-1054048.jpg" alt="CV_photo"
 							class="cv-left__photo img-thumbnail rounded-circle" />
 					</div>
 
 					<ul class="cv-left__contacts col-lg-12 col-md-6">
 
 						<li>
+							<span class="name">Dmytro Zozuliak</span>
+						</li>
+						<li>
 							<i class="fas fa-phone"></i>
 							<span>+380 96 056-43-30</span>
 						</li>
-						<li>
-							<i class="fas fa-envelope-square"></i>
-							<span>dmytro.zozuliak@gmail.com</span>
+						<li> <a href="mailto:dmytro.zozuliak@gmail.com?subject=from_CV" target="_blank">
+								<i class="far fa-envelope"></i>
+								<span>dmytro.zozuliak</span>
+								<span class="email-span">@gmail.com</span>
+							</a>
 						</li>
 						<li> <a href="https://t.me/Dima_Kon" target="_blank">
 								<i class="fab fa-telegram"></i>
@@ -59,18 +75,18 @@
 								<span>GitHub</span>
 							</a>
 						</li>
-					</ul>
 
-					<div class="cv-left__adress col-lg-12 col-md-6">
-						02094, Kyiv, Ukraine
-					</div>
+						<li class="cv-left__adress">
+							02094, Kyiv, Ukraine
+						</li>
+					</ul>
 
 				</div>
 
 				<div class="liner left-line1 col-lg-12"></div>
 
 				<div class="cv-left__skills col-lg-12 col-md-6">
-					<div class="cv-left__title">Skills</div>
+					<div class="cv-left__title" id="skills">Skills</div>
 
 					<ul class="left-cv-list">
 						<li>HTML</li>
@@ -85,11 +101,11 @@
 
 				<div class="liner left-line2 col-lg-12"></div>
 
-				<div class="cv-left__education">
+				<div class="cv-left__education" id="education">
 					<div class="cv-left__title">Education</div>
 
 					<ul class="left-cv-list">
-						<li> National Technical University of Ukraine "Kyiv Polytechnic Institute.
+						<li> National Technical University of Ukraine "Kyiv Polytechnic Institute"
 							<ul>
 								<li>chemical engineering</li>
 							</ul>
@@ -137,13 +153,13 @@
 				</div>
 
 				<section class="section-data">
-					<h3 class="profile">About Me</h3>
+					<h3 class="profile" id="about">About Me</h3>
 					<p class="profile-data">
 						After ending my studying at university, I worked as a designer for 6 years. After that for 2 years
 						as a sales manager.
 						But I only dreamed about programming, not only as a hobby, but also as a job. That's why I
 						decided
-						totally to change my life. and
+						totally to change my life and
 						began to study, study, study...
 						There is no turning back, only forward
 					</p>
@@ -196,7 +212,7 @@
 				</section>
 
 				<section class="section-data mb-5">
-					<h3 class="experience">my works</h3>
+					<h3 class="experience" id="works">my works</h3>
 
 					<article class="experience-list">
 						<ul class="experience-ul">
@@ -207,8 +223,10 @@
 							</li>
 							<li>
 								<a href="https://dmytrozozuliak.github.io/Personal-Portfolio-Webpage/#welcome-section"
-									target="_blank"><img src="./images/ScreenshotMyWorks.jpg" alt="Projects" height="290"
-										width="590"></a>
+									target="_blank">
+									<div class="experience__img">
+									</div>
+								</a>
 							</li>
 						</ul>
 					</article>
@@ -223,15 +241,14 @@
 							<li>
 
 								<pre>
-<code>// Find the stray number 
+<code>// Find the unique stray number 
 
-	function stray(numbers) {
-	 let sorted = numbers.sort((a, b) => a - b);
-	 if (sorted[0] === sorted[1]) return sorted.pop();
-	 else return sorted.shift();
-	}
-	
-console.log(stray([0, 17, 17, 17, 17]));
+function stray(numbers) {
+  let sorted = numbers.sort((a, b) => a - b);
+  if (sorted[0] === sorted[1]) return sorted.pop();
+  else return sorted.shift();
+}
+console.log(stray([17, 17, 17, 0, 17]));
 </code>
 									</pre>
 
@@ -261,8 +278,11 @@ console.log(stray([0, 17, 17, 17, 17]));
 			</ul>
 		</footer>
 
-	</div>
+		<div class="button-up">
+			<a href="#header"><i class="fas fa-arrow-circle-up"></i></a>
+		</div>
 
+	</div>
 </body>
 
 </html>
