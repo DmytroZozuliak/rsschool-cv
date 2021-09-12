@@ -39,9 +39,21 @@ body {
   background: rgb(75, 75, 77);
   border-bottom: 2px solid white;
 }
+
+.header__columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+.header__logo {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
 .header__list {
+  padding: 0;
   margin: 0;
-  padding: 15px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -49,10 +61,23 @@ body {
   align-items: center;
   min-height: 75px;
 }
+.list__item:not(:last-child) {
+  padding-right: 20px;
+}
+
 @media (max-width: 767.88px) {
+  .header__columns {
+    display: block;
+  }
   .list__item {
     flex: 0 1 50%;
     text-align: center;
+  }
+  .list__item:not(:last-child) {
+    padding-right: 0px;
+  }
+  .header__logo {
+    display: none;
   }
 }
 @media (max-width: 470px) {
@@ -64,7 +89,7 @@ body {
 .list__item a {
   color: rgb(248, 249, 250);
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.4rem;
   transition: all 0.5s ease;
 }
 .list__item a:hover {
@@ -178,10 +203,16 @@ section article ul li h4 {
   width: 90%;
   padding: 0px 0px 30% 0px;
   margin: 20px auto;
-  background: url(../images/ScreenshotMyWorks.jpg) center/cover no-repeat;
   opacity: 1;
   transition: opacity 0.5s ease;
 }
+.project-landing {
+  background: url(../images/ScreenshotMyWorks.jpg) center/cover no-repeat;
+}
+.project-museum {
+  background: url(../images/museum.jpg) center/cover no-repeat;
+}
+
 @media (max-width: 1199.88px) {
   .experience__img {
     width: 100%;
@@ -201,6 +232,12 @@ section article ul li h4 {
 .experience-list__position-title {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+code,
+pre,
+pre code {
+  white-space: pre-wrap;
+  word-break: break-all;
 }
 
 /* CV-left side */
@@ -364,6 +401,9 @@ section article ul li h4 {
   .cv-left__title {
     font-size: 1.4rem;
   }
+  pre {
+    overflow: hidden;
+  }
 }
 @media (max-width: 575.88px) {
   .cv-left__photoblock {
@@ -381,8 +421,5 @@ section article ul li h4 {
   }
   .cv-left__title {
     font-size: 1.4rem;
-  }
-  pre {
-    overflow: hidden;
   }
 }

@@ -23,14 +23,20 @@
 	<div class="container my-4">
 
 		<header class="header" id="header">
-			<nav>
-				<ul class="header__list list">
-					<li class="list__item"><a href="#about">about me</a></li>
-					<li class="list__item"><a href="#skills">skills</a></li>
-					<li class="list__item"><a href="#works">my works</a></li>
-					<li class="list__item"><a href="#education">education</a></li>
-				</ul>
-			</nav>
+			<div class="header__columns">
+				<div class="header__logo">
+					Dmytro Zozuliak
+				</div>
+
+				<nav>
+					<ul class="header__list list">
+						<li class="list__item"><a href="#about">about me</a></li>
+						<li class="list__item"><a href="#skills">skills</a></li>
+						<li class="list__item"><a href="#works">my works</a></li>
+						<li class="list__item"><a href="#education">education</a></li>
+					</ul>
+				</nav>
+			</div>
 		</header>
 
 		<main class="row">
@@ -130,6 +136,15 @@
 							</ul>
 						</li>
 
+						<li>
+							<a href="https://github.com/rolling-scopes-school/tasks/tree/master/stage0" target="_blank">
+								<span>RS School</span>
+							</a>
+							<ul>
+								<li>Stage 0</li>
+							</ul>
+						</li>
+
 					</ul>
 				</div>
 
@@ -218,15 +233,24 @@
 						<ul class="experience-ul">
 							<li>
 								<h4 class="uppercase">
-									Some of my projects which collected in landing page below
+									Projects
 								</h4>
 							</li>
 							<li>
 								<a href="https://dmytrozozuliak.github.io/Personal-Portfolio-Webpage/#welcome-section"
 									target="_blank">
-									<div class="experience__img">
+									<div class="experience__img project-landing">
 									</div>
 								</a>
+								<p>Portfolio webpage from freecodecamp: HTML, CSS</p>
+							</li>
+							<li>
+								<a href="https://rolling-scopes-school.github.io/dmytrozozuliak-JSFEPRESCHOOL/museum/"
+									target="_blank">
+									<div class="experience__img project-museum">
+									</div>
+								</a>
+								<p>Landing page from rolling-scopes-school stage 0: HTML, CSS</p>
 							</li>
 						</ul>
 					</article>
@@ -251,7 +275,6 @@ function stray(numbers) {
 console.log(stray([17, 17, 17, 0, 17]));
 </code>
 									</pre>
-
 							</li>
 						</ul>
 					</article>
