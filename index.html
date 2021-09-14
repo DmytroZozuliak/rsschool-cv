@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>CV</title>
-
+	<link rel="shortcut icon" href="./images/favicon/favicon.ico">
 	<!-- Подключаем стили проекта -->
 	<!-- CSS only -->
 	<link rel="stylesheet" href="./css/bootstrap.css" />
@@ -20,20 +20,32 @@
 </head>
 
 <body class="body-bg">
-	<div class="container my-4">
+	<div class="container">
 
 		<header class="header" id="header">
-			<nav>
-				<ul class="header__list list">
-					<li class="list__item"><a href="#about">about me</a></li>
-					<li class="list__item"><a href="#skills">skills</a></li>
-					<li class="list__item"><a href="#works">my works</a></li>
-					<li class="list__item"><a href="#education">education</a></li>
-				</ul>
-			</nav>
+			<div class="header__columns">
+				<div class="header__logo">
+					Dmytro Zozuliak
+				</div>
+
+				<div class="header__menu menu">
+					<div class="menu__icon">
+						<span></span>
+					</div>
+
+					<nav class="menu__body">
+						<ul class="menu__list list">
+							<li><a data-goto="#about" class="list__item" href="#">about me</a></li>
+							<li><a data-goto="#skills" class="list__item" href="#">skills</a></li>
+							<li><a data-goto="#works" class="list__item" href="#">my works</a></li>
+							<li><a data-goto="#education" class="list__item" href="#">education</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
 		</header>
 
-		<main class="row">
+		<main class="row main">
 
 			<aside class="cv-left col-lg-3 col-md-12 row">
 				<div class="col-lg-12 col-md-6">
@@ -130,6 +142,15 @@
 							</ul>
 						</li>
 
+						<li>
+							<a href="https://github.com/rolling-scopes-school/tasks/tree/master/stage0" target="_blank">
+								<span>RS School</span>
+							</a>
+							<ul>
+								<li>Stage 0</li>
+							</ul>
+						</li>
+
 					</ul>
 				</div>
 
@@ -163,6 +184,9 @@
 						began to study, study, study...
 						There is no turning back, only forward
 					</p>
+					<iframe src="https://www.youtube.com/embed/VhIvTNjcZHk" title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
 				</section>
 
 				<section class="section-data mb-5">
@@ -218,15 +242,24 @@
 						<ul class="experience-ul">
 							<li>
 								<h4 class="uppercase">
-									Some of my projects which collected in landing page below
+									Projects
 								</h4>
 							</li>
 							<li>
 								<a href="https://dmytrozozuliak.github.io/Personal-Portfolio-Webpage/#welcome-section"
 									target="_blank">
-									<div class="experience__img">
+									<div class="experience__img project-landing">
 									</div>
 								</a>
+								<p>Portfolio webpage from freecodecamp: HTML, CSS</p>
+							</li>
+							<li>
+								<a href="https://rolling-scopes-school.github.io/dmytrozozuliak-JSFEPRESCHOOL/museum/"
+									target="_blank">
+									<div class="experience__img project-museum">
+									</div>
+								</a>
+								<p>Landing page from rolling-scopes-school stage 0: HTML, CSS</p>
 							</li>
 						</ul>
 					</article>
@@ -251,7 +284,6 @@ function stray(numbers) {
 console.log(stray([17, 17, 17, 0, 17]));
 </code>
 									</pre>
-
 							</li>
 						</ul>
 					</article>
@@ -278,11 +310,9 @@ console.log(stray([17, 17, 17, 0, 17]));
 			</ul>
 		</footer>
 
-		<div class="button-up">
-			<a href="#header"><i class="fas fa-arrow-circle-up"></i></a>
-		</div>
-
 	</div>
+
+	<script src="./script.js"></script>
 </body>
 
 </html>
