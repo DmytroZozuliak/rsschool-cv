@@ -36,7 +36,7 @@ if (menuLink.length > 0) {
         gotoBlock.getBoundingClientRect().top +
         scrollY -
         document.querySelector('header').offsetHeight -
-        20; // 20 зазор
+        20; // 20 зазор в плюсе
 
       if (iconMenu.classList.contains('_active')) {
         document.body.classList.remove('_lock');
