@@ -329,6 +329,37 @@ section article ul li h4 {
 .project-museum {
   background: url(../images/museum.jpg) center/cover no-repeat;
 }
+.project-christmas {
+  background: url(../images/christmas.jpg) center/cover no-repeat;
+}
+.project-momentum {
+  background: url(../images/momentum.jpg) center/cover no-repeat;
+}
+.project-art-quiz {
+  background: url(../images/art-quiz.jpg) center/cover no-repeat;
+}
+.project-rs-lang {
+  background: url(../images/rs-lang.jpg) center/cover no-repeat;
+}
+
+.certificate_1 {
+  background: url(../images/FCC_certificate.jpg) center/cover no-repeat;
+  width: 100%;
+  padding-bottom: 80%;
+  margin-bottom: 20px;
+}
+.certificate_2 {
+  background: url(../images/JS_certificate.png) center/cover no-repeat;
+  width: 100%;
+  padding-bottom: 80%;
+  margin-bottom: 20px;
+
+}
+.certificate_3 {
+  background: url(../images/RS_certificate.jpg) center/cover no-repeat;
+  width: 100%;
+  padding-bottom: 80%;
+}
 
 @media (max-width: 1199.88px) {
   .experience__img {
