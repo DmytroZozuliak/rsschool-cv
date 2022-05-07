@@ -121,7 +121,7 @@
           <div class="cv-left__title">Education</div>
 
           <ul class="left-cv-list">
-            <li> National Technical University of Ukraine "Kyiv Polytechnic Institute"
+            <li> National Technical University of Ukraine "Kyiv Polytechnic Institute - 2006-2012"
               <ul>
                 <li>chemical engineering</li>
               </ul>
@@ -129,7 +129,7 @@
 
             <li>
               <a href="https://www.freecodecamp.org/" target="_blank">
-                <span>Freecodecamp courses</span>
+                <span>Freecodecamp courses - June 2021</span>
               </a>
               <ul>
                 <li>HTML/CSS</li>
@@ -139,7 +139,7 @@
 
             <li>
               <a href="https://itgid.info/course/javascript-2" target="_blank">
-                <span>Alexander Lushenko courses</span>
+                <span>Alexander Lushenko courses - July 2021</span>
               </a>
               <ul>
                 <li>JavaScrtipt v2.0</li>
@@ -148,7 +148,7 @@
 
             <li>
               <a href="https://github.com/rolling-scopes-school/tasks/tree/master/stage0" target="_blank">
-                <span>RS School</span>
+                <span>RS School - Aug 2021 - May 2022</span>
               </a>
               <ul>
                 <li>Stage 0</li>
@@ -259,18 +259,11 @@
                 </h4>
               </li>
               <li>
-                <a href="https://dmytrozozuliak.github.io/Personal-Portfolio-Webpage/#welcome-section" target="_blank">
-                  <div class="experience__img project-landing">
-                  </div>
-                </a>
-                <p>Portfolio webpage from freecodecamp: HTML, CSS</p>
-              </li>
-              <li>
-                <a href="https://rolling-scopes-school.github.io/dmytrozozuliak-JSFEPRESCHOOL/museum/" target="_blank">
+                <a href="https://dmytrozozuliak.github.io/RSSchool/museum-dom/" target="_blank">
                   <div class="experience__img project-museum">
                   </div>
                 </a>
-                <p>Museum. Landing page from rolling-scopes-school stage 0: HTML, CSS</p>
+                <p>Museum. Landing page from rolling-scopes-school stage 1: HTML, SCSS, JS</p>
               </li>
               <li>
                 <a href="https://dmytrozozuliak.github.io/RSSchool/momentum/" target="_blank">
@@ -316,14 +309,22 @@
               <li>
 
                 <pre>
-<code>// Find the unique stray number
+<code>// You'll implement once, a function that takes another function as an argument, and returns a new version of that function that can only be called once.
 
-function stray(numbers) {
-  let sorted = numbers.sort((a, b) => a - b);
-  if (sorted[0] === sorted[1]) return sorted.pop();
-  else return sorted.shift();
-}
-console.log(stray([17, 17, 17, 0, 17]));
+  function once(fn) {
+    let isAble = true
+
+    return function(...args){
+        if(isAble){
+          isAble = false
+        return fn.apply(null, args);
+        }
+      }
+  }
+
+  let logOnce = once(console.log)
+  logOnce("foo") // -> "foo"
+  logOnce("bar") // -> no effect]));
 </code>
 									</pre>
               </li>
