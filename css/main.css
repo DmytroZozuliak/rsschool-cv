@@ -319,7 +319,7 @@ section article ul li h4 {
 .experience__img {
   width: 90%;
   padding: 0px 0px 30% 0px;
-  margin: 20px auto;
+  margin: 20px auto 5px;
   opacity: 1;
   transition: opacity 0.5s ease;
 }
@@ -346,7 +346,6 @@ section article ul li h4 {
   background: url(../images/FCC_certificate.jpg) center/cover no-repeat;
   width: 100%;
   padding-bottom: 80%;
-  margin-bottom: 20px;
 }
 .certificate_2 {
   background: url(../images/JS_certificate.png) center/cover no-repeat;
@@ -359,6 +358,8 @@ section article ul li h4 {
   background: url(../images/RS_certificate.jpg) center/cover no-repeat;
   width: 100%;
   padding-bottom: 80%;
+  margin-bottom: 20px;
+
 }
 
 @media (max-width: 1199.88px) {
