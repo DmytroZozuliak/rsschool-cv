@@ -405,7 +405,13 @@ section article ul li h4 {
   width: 100%;
   padding-bottom: 80%;
   margin-bottom: 20px;
+}
 
+.certificate_4 {
+  background: url(../images/React_certificate.png) center/cover no-repeat;
+  width: 100%;
+  padding-bottom: 80%;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 1199.88px) {
