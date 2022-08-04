@@ -424,6 +424,19 @@ section article ul li h4 {
   margin-bottom: 20px;
 }
 
+@media (max-width: 991px) {
+
+  .certificate_1,
+  .certificate_2,
+  .certificate_3,
+  .certificate_4 {
+    width: 82%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 46%;
+  }
+}
+
 @media (max-width: 1199.88px) {
   .experience__img {
     width: 100%;
