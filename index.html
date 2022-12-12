@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CV</title>
+  <title>CV Dmytro Zozuliak Front-end developer</title>
   <link rel="shortcut icon" href="./images/favicon/favicon.png">
   <!-- Подключаем стили проекта -->
   <!-- CSS only -->
@@ -198,7 +198,7 @@
       <div class="cv-right col-lg-9 col-md-12 bg-light">
         <h1 class="cv-header text-center mt-5">Dmytro Zozuliak</h1>
         <div class="mark-liner">
-          <h2 class="job-title">Junior Front-end developer</h2>
+          <h2 class="job-title">Front-end developer</h2>
           <div class="liner position-liner"></div>
         </div>
 
@@ -209,7 +209,7 @@
             </br>
             Can easily work in a team or by myself.
             </br>
-            Very scrupulous to details and I love when the work is done completely and in time.
+            Very scrupulous to details. Love when the work is done completely and in time.
             </br>
             Day after day improving myself.
             </br>
@@ -228,25 +228,52 @@
           <article class="experience-list">
             <ul class="experience-ul">
               <li>
-                <h4 class="uppercase">
+                <h4 class="uppercase experience-list__title">
+                  <img class="experience-list__logo" src="./images/OX_logo.jpg" alt="ox_logo" width='50' height='50'>
+                  Oxygean startup
+                  <span class="year">07.2022-12.2022</span>
+                </h4>
+                <h4 class="experience-list__position-title">
+                  React front-end developer
+                </h4>
+                <p>
+                  Worked with OX site and helped to develop OX application using React Native.
+                  <br>
+                  Startup stopped development.
+                  <br>
+                  Recommendations can be obtained from CEO <a href="https://www.linkedin.com/in/andrii-drozdov/">Andriy
+                    Drozdov</a>.
+                </p>
+              </li>
+              <li>
+                <h4 class="uppercase experience-list__title">
+                  <img class="experience-list__logo" src="./images/Br_logo.jpg" alt="ox_logo" width='50' height='50'>
                   Brayval-coffee
                   <span class="year">2018-2021</span>
                 </h4>
-              </li>
-              <li>
                 <h4 class="experience-list__position-title">
                   Sales manager
                 </h4>
-              </li>
-              <li>
                 <p>
                   Was engaged in the sale of coffee equipment, rental of coffee machines
+                </p>
+              </li>
+              <li>
+                <h4 class="uppercase">
+                  Kyiv Electrotechnical Company, LLC. TM Euroluki
+                  <span class="year">2012-2018</span>
+                </h4>
+                <h4 class="experience-list__position-title">
+                  Designer of hidden hatches
+                </h4>
+                <p>
+                  Design drawings, specifications for products. Using such programs as Autocad and SolidWorks.
                 </p>
               </li>
             </ul>
           </article>
 
-          <article class="experience-list">
+          <!-- <article class="experience-list">
             <ul class="experience-ul">
               <li>
                 <h4 class="uppercase">
@@ -265,7 +292,7 @@
                 </p>
               </li>
             </ul>
-          </article>
+          </article> -->
 
         </section>
 
@@ -385,11 +412,10 @@
     let isAble = true
 
     return function(...args){
-        if(isAble){
-          isAble = false
-        return fn.apply(null, args);
-        }
-      }
+      if(!isAble) return
+
+      isAble = false
+      return fn.apply(null, args);
   }
 
   let logOnce = once(console.log)

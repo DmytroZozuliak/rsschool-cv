@@ -453,9 +453,18 @@ section article ul li h4 {
   margin: 20px auto;
 }
 
-.experience-list__position-title {
-  margin-top: 10px;
-  margin-bottom: 10px;
+.experience-list__title {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.experience-list .experience-list__logo {
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  margin: 0 5px;
+  display: inline-block;
 }
 
 code,
