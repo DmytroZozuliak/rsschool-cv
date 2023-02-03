@@ -22,6 +22,29 @@
 <body class="body-bg">
   <div class="container">
 
+    <header class="header" id="header">
+      <div class="header__columns">
+        <div class="header__logo">
+          Dmytro Zozuliak
+        </div>
+
+        <div class="header__menu menu">
+          <div class="menu__icon">
+            <span></span>
+          </div>
+
+          <nav class="menu__body">
+            <ul class="menu__list list">
+              <li><a data-goto="#about" class="list__item" href="#">about me</a></li>
+              <li><a data-goto="#skills" class="list__item" href="#">skills</a></li>
+              <li><a data-goto="#works" class="list__item" href="#">my works</a></li>
+              <li><a data-goto="#education" class="list__item" href="#">education</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
     <main class="row main">
 
       <aside class="cv-left col-lg-3 col-md-12 row">
@@ -71,6 +94,10 @@
               02094, Kyiv, Ukraine
             </li>
           </ul>
+
+          <a href='https://drive.google.com/file/d/1X-DLzAtpsuAFM6oknartMhEuAYMmsMpH/view?usp=sharing' target="_blank"
+            class="cv-left__CV-pdf col-lg-12 col-md-6">CV in pdf format</a>
+
         </div>
 
         <div class="liner left-line1 col-lg-12"></div>
@@ -80,17 +107,18 @@
 
           <ul class="left-cv-list">
             <li>HTML</li>
-            <li>CSS (SCSS, tailwind, BEM)</li>
+            <li>CSS (SCSS, BEM)</li>
             <li>JavaScript (Fundamentals, ES6+, DOM)</li>
             <li>TypeScript</li>
             <li>React + react-dom</li>
             <li>Redux + RTK (query)</li>
+            <li>RestApi</li>
             <li>RestApi (CRUD operations)</li>
             <li>Git/GitHub</li>
-            <li>Cypress(e2e)</li>
-            <li>Jest</li>
             <li>Figma</li>
             <li>Webpack</li>
+            <li>Cypress(e2e)</li>
+            <li>Jest</li>
             <li>Autocad</li>
             <li>SolidWorks</li>
           </ul>
@@ -152,6 +180,11 @@
             </ul>
             </li>
           </ul>
+
+          <div class='certificate_4'></div>
+          <div class='certificate_3'></div>
+          <div class='certificate_2'></div>
+          <div class='certificate_1'></div>
         </div>
 
         <div class="cv-left__achievments">
@@ -185,9 +218,17 @@
             Day after day improving myself.
             </br>
             I like boxing and traveling.
-            </br>
-            <a href="https://dmytrozozuliak.github.io/rsschool-cv/">To see more details see my CV in web-format</a>
           </p>
+          <div class="profile-video">
+            <iframe src="https://www.loom.com/embed/3781321536414421bd18433353e4047a" frameborder="0"
+              webkitallowfullscreen mozallowfullscreen allowfullscreen
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+
+
+            <!-- <iframe src="https://www.youtube.com/embed/VhIvTNjcZHk" title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe> -->
+          </div>
         </section>
 
         <section class="section-data mb-5">
@@ -229,8 +270,54 @@
                     href="https://www.linkedin.com/in/kurichenko-oleksii-794b3277/">Kurichenko Oleksii</a>.
                 </p>
               </li>
+              <li>
+                <h4 class="uppercase experience-list__title">
+                  <img class="experience-list__logo" src="./images/Br_logo.jpg" alt="ox_logo" width='50' height='50'>
+                  Brayval-coffee
+                  <span class="year">2018-2021</span>
+                </h4>
+                <h4 class="experience-list__position-title">
+                  Sales manager
+                </h4>
+                <p>
+                  Was engaged in the sale of coffee equipment, rental of coffee machines
+                </p>
+              </li>
+              <li>
+                <h4 class="uppercase">
+                  Kyiv Electrotechnical Company, LLC. TM Euroluki
+                  <span class="year">2012-2018</span>
+                </h4>
+                <h4 class="experience-list__position-title">
+                  Designer of hidden hatches
+                </h4>
+                <p>
+                  Design drawings, specifications for products. Using such programs as Autocad and SolidWorks.
+                </p>
+              </li>
             </ul>
           </article>
+
+          <!-- <article class="experience-list">
+            <ul class="experience-ul">
+              <li>
+                <h4 class="uppercase">
+                  Kyiv Electrotechnical Company, LLC. TM Euroluki
+                  <span class="year">2012-2018</span>
+                </h4>
+              </li>
+              <li>
+                <h4 class="experience-list__position-title">
+                  Designer of hidden hatches
+                </h4>
+              </li>
+              <li>
+                <p>
+                  Design drawings, specifications for products. Using such programs as Autocad and SolidWorks.
+                </p>
+              </li>
+            </ul>
+          </article> -->
 
         </section>
 
@@ -247,10 +334,12 @@
               </li>
 
               <li>
+                <a href="https://project-management-team26.netlify.app/home" target="_blank">
+                  <div class="experience__img project-manager">
+                  </div>
+                </a>
                 <div>
-                  <a href="https://project-management-team26.netlify.app/home" target="_blank">
-                    <strong>> Project manager.</strong>
-                  </a> <i>May 2022.</i>
+                  <strong>> Project manager.</strong> <i>May 2022.</i>
                 </div>
                 <div>
                   Application like Trello\Jira. Command task. <a
@@ -263,45 +352,102 @@
                 </div>
               </li>
 
-              <li>
+              <!-- <li>
+                <a href="https://troitskiyandrew.github.io/rs-lang/" target="_blank">
+                  <div class="experience__img project-rs-lang">
+                  </div>
+                </a>
                 <div>
-                  <a href="https://rolling-scopes-school.github.io/dmytrozozuliak-JSFE2021Q3/christmas-task/"
-                    target="_blank">
+                  <strong>> Mario-lang.</strong> <i>Feb 2022.</i>
+                </div>
+                <div>
+                  Command task. SPA for learning english.
+                </div>
+                <div>
+                  <strong>Used technologies:</strong> TS, SCSS, OOP, webpack, REST API.
+                </div>
+              </li> -->
 
-                    <strong>> Christmas application.</strong></a> <i>Dec 2021.</i>
+              <li>
+                <a href="https://rolling-scopes-school.github.io/dmytrozozuliak-JSFE2021Q3/christmas-task/"
+                  target="_blank">
+                  <div class="experience__img project-christmas">
+                  </div>
+                </a>
+                <div>
+                  <strong>> Christmas application.</strong> <i>Dec 2021.</i>
                 </div>
                 <div>SPA with filtering, drag and drop.</div>
                 <div><strong>Used technologies:</strong> TS, SCSS, OOP, filter and sorting, webpack.</div>
               </li>
 
               <li>
+                <a href="https://dmytrozozuliak.github.io/RSSchool/art-quiz/" target="_blank">
+                  <div class="experience__img project-art-quiz">
+                  </div>
+                </a>
                 <div>
-                  <a href="https://dmytrozozuliak.github.io/RSSchool/art-quiz/" target="_blank">
-
-                    <strong>> Art-quiz.</strong></a> <i>Nov 2021.</i>
+                  <strong>> Art-quiz.</strong> <i>Nov 2021.</i>
                 </div>
                 <div>SPA. Quiz with saving results.</div>
                 <div><strong>Used technologies:</strong> JS, SCSS, webpack.</div>
               </li>
 
               <li>
+                <a href="https://dmytrozozuliak.github.io/RSSchool/momentum/" target="_blank">
+                  <div class="experience__img project-momentum">
+                  </div>
+                </a>
                 <div>
-                  <a href="https://dmytrozozuliak.github.io/RSSchool/momentum/" target="_blank">
-                    <strong>> Momentum.</strong></a> <i>Nov 2021.</i>
+                  <strong>> Momentum.</strong> <i>Nov 2021.</i>
                 </div>
                 <div>Momentum clone application.</div>
                 <div><strong>Used technologies:</strong> HTML, SCSS, JS, API.</div>
               </li>
 
               <li>
+                <a href="https://dmytrozozuliak.github.io/RSSchool/museum-dom/" target="_blank">
+                  <div class="experience__img project-museum">
+                  </div>
+                </a>
                 <div>
-                  <a href="https://dmytrozozuliak.github.io/RSSchool/museum-dom/" target="_blank">
-                    <strong>> Museum.</strong></a> <i>Oct 2021.</i>
+                  <strong>> Museum.</strong> <i>Oct 2021.</i>
                 </div>
                 <div>Landing page.</div>
                 <div><strong>Used technologies:</strong> HTML, SCSS, JS, map-library, form validation, custom video
                   player, vanilla
                   carousel, animation.</div>
+              </li>
+            </ul>
+          </article>
+
+          <article class="experience-list">
+            <ul class="experience-ul">
+              <li>
+                <h4 class="uppercase">
+                  Code Examples
+                </h4>
+              </li>
+              <li>
+
+                <pre>
+<code>// You'll implement once, a function that takes another function as an argument, and returns a new version of that function that can only be called once.
+
+  function once(fn) {
+    let isAble = true
+
+    return function(...args){
+      if(!isAble) return
+
+      isAble = false
+      return fn.apply(null, args);
+  }
+
+  let logOnce = once(console.log)
+  logOnce("foo") // -> "foo"
+  logOnce("bar") // -> no effect]));
+</code>
+									</pre>
               </li>
             </ul>
           </article>
@@ -312,8 +458,25 @@
 
     </main>
 
+    <footer class="footer col-lg-12">
+      <ul class="footer__list">
+        <li>
+          <a href="https://github.com/DmytroZozuliak" target="_blank">
+            <i class="fab fa-github"></i>
+            <span>My GitHub</span>
+          </a>
+        </li>
+        <li>2022</li>
+        <li>
+          <a href="https://rs.school/js/" target="_blank"><img src="https://rs.school/images/rs_school_js.svg"
+              alt="loco rs_school" height="100" width="100"></a>
+        </li>
+      </ul>
+    </footer>
+
   </div>
 
+  <script src="./script.js"></script>
 </body>
 
 </html>
